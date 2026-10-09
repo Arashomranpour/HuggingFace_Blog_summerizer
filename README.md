@@ -1,27 +1,44 @@
-# HuggingFace Blog Summarizer
+<div align="center">
 
-This repository provides a solution for summarizing blog posts using a combination of HuggingFace models and web scraping techniques.
+# 📝 Blog Post Summarizer
 
-## Files
+**Scrape any blog article with BeautifulSoup and summarize it with a Hugging Face transformer.**
 
-- **postSummarization_usingHuggingface_andBeautifulSoup.ipynb**: Jupyter notebook that demonstrates how to scrape blog posts and summarize them using HuggingFace's transformers and BeautifulSoup for web scraping.
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+![Transformers](https://img.shields.io/badge/🤗_Transformers-FFD21E)
+![BeautifulSoup](https://img.shields.io/badge/BeautifulSoup-scraping-informational)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&logoColor=white)
 
-## Requirements
+</div>
 
-- Python 3.x
-- HuggingFace Transformers
-- BeautifulSoup
-- Jupyter Notebook
+---
 
-## Installation
+## ✨ How it works
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Arashomranpour/HuggingFace_Blog_summerizer.git
-   cd HuggingFace_Blog_summerizer
-2. Install Dependenices:
-   ```bash
-   pip install transformers beautifulsoup4 jupyter
-4. Run Jupyter:
-   ```bash
-   jupyter notebook postSummarization_usingHuggingface_andBeautifulSoup.ipynb
+`postSummarization_usingHuggingFace_andBeautifulSoup.ipynb`:
+
+1. 🌐 Downloads a blog URL with `requests`.
+2. 🍜 Extracts the headline and paragraphs (`h1`, `p`) with **BeautifulSoup**.
+3. 🤖 Summarizes the extracted text with the Hugging Face `summarization` pipeline.
+
+## 🚀 Getting Started
+
+```bash
+git clone https://github.com/Arashomranpour/HuggingFace_Blog_summerizer.git
+cd HuggingFace_Blog_summerizer
+pip install transformers torch beautifulsoup4 requests jupyter
+jupyter notebook postSummarization_usingHuggingface_andBeautifulSoup.ipynb
+```
+
+Change the `url` variable in the notebook to summarize a different article.
+
+## 📁 Project Structure
+
+```
+.
+└── postSummarization_usingHuggingface_andBeautifulSoup.ipynb
+```
+
+## 🛠️ Tech Stack
+
+`Hugging Face Transformers` · `BeautifulSoup` · `requests`
